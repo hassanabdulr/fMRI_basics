@@ -35,4 +35,14 @@ This repository provides a beginner-friendly introduction to fMRI analysis, cove
 
 ## Where do I get started?
 
-Once you've sorted out your lab account and have access to our cluster. Start with the fMRIPrep tutorial if you're a complete beginner, then work your way up to the notebooks!
+Once you've sorted out your lab account and have access to our cluster. 
+
+Clone this repository to your projects folder and then start with the fMRIPrep tutorial if you're a complete beginner, then work your way up to the notebooks!
+
+`git clone https://github.com/hassanabdulr/fMRI_basics.git`
+
+I am not going to tell you *how* to do it, can't make it too easy :)
+
+If you're brand new to git, I'd recommend reading up on it and learning how to git. This is an incredibly powerful version control tool
+
+https://docs.github.com/en/get-started/git-basics
