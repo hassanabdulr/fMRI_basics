@@ -41,6 +41,15 @@
 #SBATCH --output=/projects/aabdulrasul/TAY/fmriprep/log/%x_%A_%a.out #### output log that contains all the print statements from the job. %x is the job name, %A is the job id, and %a is the array index. this is useful for debugging and checking the progress of the job
 #SBATCH --error=/projects/aabdulrasul/TAY/fmriprep/log/%x_%A_%a.err #### error log that contains all the error messages from the job. %x is the job name, %A is the job id, and %a is the array index. this is useful for debugging and checking the progress of the job
 
+
+### to check the resource usage of the job you can use the command seff job_id, where job_id is the job id of the job you want to check. this will give you a summary of the job's resource usage, including memory, time, and cpu usage
+  # if you're unsure of the job id, go to your log directory and look for the job name and array index. the job id is the number after the job name and before the array index. for example, if your job name is TAY_fmriprep_12345_1, then the job id is 12345.
+  # so you can type seff 12345 to see the resource usage of that job. 
+  # important to note, while yes one jobs usage will give you a good idea of the resources needed, it might not be accurate all the time. Compute requirements can increase based on many factors
+  # example, if they completed more than 2 runs of rest and task, or if they have very messy data, the cleaning and aligning that fmriprep does will require more compute. 
+  # so just be aware that things could fail or run out of memory, as always READ the logs and check the output of the job to see if it completed successfully!!!!!!
+
+
 # Stop immediately if a command fails, a variable is missing, or a pipeline
 # fails. These options make setup mistakes easier to diagnose.
 set -euo pipefail
