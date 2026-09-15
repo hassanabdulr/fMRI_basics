@@ -206,3 +206,12 @@ singularity run --cleanenv \
 # - Working directory should be deleted once a job is done! if you have any doubts about the status of a job, check the log files.
 # - if a job fails, its always good practice to delete the working directory, and also the output directory for that subject, and then rerun the job
 # - Always read the logs if you notice an error, search it up and troubleshoot it. if you can't figure it out, ask staff or other students for help!
+
+
+
+## if you'd like to see some examples of fmriprep sbatch scripts here are the paths to them below
+
+# /projects/aabdulrasul/Tutorials/fMRI_basics/bash_scripts/run_fMRIprep.sh
+# /projects/aabdulrasul/SPINR/FMRIPREP/code/run_fmriprep.sh
+# /projects/aabdulrasul/SPASD/FMRIPREP/code/run_fmriprep_w_fs.sh
+# /projects/aabdulrasul/SPASD/FMRIPREP/code/run_fmriprep.sh
