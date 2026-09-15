@@ -11,6 +11,10 @@
 # The example below uses the TAY study and the my project folder.
 # Replace these example values with your respective data and project path
 
+
+# fMRIPrep documentation: https://fmriprep.org/en/stable/
+
+
 ##################### Slurm resource requests
 
 # These lines are read by Slurm when the job is submitted. They must be placed
