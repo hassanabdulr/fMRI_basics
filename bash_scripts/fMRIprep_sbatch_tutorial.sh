@@ -47,7 +47,7 @@
   # so you can type seff 12345 to see the resource usage of that job. 
   # important to note, while yes one jobs usage will give you a good idea of the resources needed, it might not be accurate all the time. Compute requirements can increase based on many factors
   # example, if they completed more than 2 runs of rest and task, or if they have very messy data, the cleaning and aligning that fmriprep does will require more compute. 
-  # so just be aware that things could fail or run out of memory, as always READ the logs and check the output of the job to see if it completed successfully!!!!!!
+  # so just be aware that things could fail or run out of memory, as always READ the logs and check the output of the job to see if it completed successfully
 
 
 # Stop immediately if a command fails, a variable is missing, or a pipeline
@@ -153,6 +153,10 @@ export APPTAINERENV_TEMPLATEFLOW_HOME="/home/fmriprep/.cache/templateflow"
 
 
 
+# The container provides the fMRIPrep software and its dependencies. Each -B
+# option binds a directory on the cluster (left side) to a path inside the
+# container (right side), so the container can read inputs and write outputs.
+# remember, the cointainer is a silo'd environment, so it doesn't have access to the cluster's file system unless you bind it!
 # The settings in this block are dataset- and analysis-specific. Do not copy
 # them blindly to another study: read the fMRIPrep documentation and confirm
 # why each option is appropriate for your data and research question. Again, if you're confused ask Staff, students, PIs who are working with the same data.
