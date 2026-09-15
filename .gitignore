@@ -1,1 +1,4 @@
 bash_scripts/run_fMRIprep.sh
+
+notebooks/02_xcpd_outputs.ipynb
+notebooks/03_mean_timeseries_and_confounds.ipynb
